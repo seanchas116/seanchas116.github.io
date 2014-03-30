@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")/
+    meta(content="IE=edge;chrome=1" http-equiv="X-UA-Compatible")/
+    title
+      | Ill-documented Grimoire#{' - ' + current_article.title unless current_article.nil?}
+    = feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed"
+    = stylesheet_link_tag 'style'
+    = stylesheet_link_tag 'zenburn'
+  body
+    #columns
+      aside#sidebar role='navigation'
+        h1#sidebar_title
+          | Ill-
+          br
+          | documented
+          br
+          | Grimoire
+        nav
+          ul#sidebar_links
+            li= link_to 'About', '/about'
+            li= link_to 'Works', '/works'
+            li= link_to 'Blog', '/blog'
+
+      section#main role="main"
+        = yield
