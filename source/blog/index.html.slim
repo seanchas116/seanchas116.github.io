@@ -2,10 +2,11 @@
 title: Blog
 ---
 
+h1 Blog
+
 h2 Tags
-ul
+ul.no-dots
   - blog.tags.each do |tag, articles|
     li= link_to "#{tag} (#{articles.size})", tag_path(tag)
 h2 Articles
-- page_articles.each do |article|
-  h3= link_to article.title, article
+= partial :article_list, locals: {articles: page_articles}
