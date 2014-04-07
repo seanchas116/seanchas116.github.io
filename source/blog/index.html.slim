@@ -4,9 +4,13 @@ title: Blog
 
 h1 Blog
 
+h2 Recent Articles
+= partial :article_list, locals: {articles: blog.articles[0...10]}
 h2 Tags
 ul.no-dots
   - blog.tags.each do |tag, articles|
     li= link_to "#{tag} (#{articles.size})", tag_path(tag)
-h2 Articles
-= partial :article_list, locals: {articles: page_articles}
+h2 By Year
+ul.no-dots
+  - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+    li= link_to "#{year} (#{articles.size})", blog_year_path(year)

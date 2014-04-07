@@ -127,7 +127,8 @@ a {
   h3 {
     @include section-divisor;
     @include weight-bold;
-    @include base-text;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   a {
@@ -230,10 +231,10 @@ a {
     h1 {
       padding-top: 10rem;
       padding-left: 4rem;
-      padding-bottom: 10rem;
     }
 
     ul {
+      padding-top: 10rem;
       padding-left: 7rem;
       list-style-type: none;
       li {
