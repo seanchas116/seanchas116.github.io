@@ -8,7 +8,8 @@ gem "middleman-blog", "~> 3.5.2"
 # For feed.xml.builder
 gem "builder", "~> 3.0"
 
-gem 'html2haml', '~> 1.0.1'
+gem 'html2haml', '~> 1.0'
 gem 'middleman-slim', '~> 0.1.1'
-gem 'redcarpet', '~> 3.1.1'
-gem 'middleman-syntax', '~> 2.0.0'
+gem 'redcarpet', '~> 3.1'
+gem 'middleman-syntax', '~> 2.0'
+gem "middleman-deploy", '~> 0.2.3'
