@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/blog</id>
+  <link href="http://blog.url.com/blog"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2014-04-07T00:00:00Z</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Middleman と GitHub Pages で新しくWebサイトとブログを作った</title>
+    <link rel="alternate" href="http://blog.url.com/blog/2014/04/07/new-blog.html"/>
+    <id>http://blog.url.com/blog/2014/04/07/new-blog.html</id>
+    <published>2014-04-07T00:00:00Z</published>
+    <updated>2015-04-06T00:21:05+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;新しく自分のWebサイトとブログを作りました。&lt;/p&gt;
+
+&lt;p&gt;Middleman を使って静的ページを生成する仕組みになっています。
+ホスティングには GitHub Pages を使いました。
+ソースコードは&lt;a href="https://github.com/seanchas116/seanchas116.github.io"&gt;こちらです&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;また今回はデザインを1から自分で作りました。初めての経験です。&lt;/p&gt;
+
+&lt;p&gt;細かい技術的な話はまた別に書きたいかなと思います。&lt;/p&gt;
+</content>
+  </entry>
+</feed>
